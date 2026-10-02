@@ -1,4 +1,4 @@
-# ใบงานปฏิบัติสัปดาห์ที่ 7: Google AI Studio & Gemini API Integration
+<img width="1546" height="756" alt="image" src="https://github.com/user-attachments/assets/94d878fa-316c-4806-9480-8572ef3631df" /># ใบงานปฏิบัติสัปดาห์ที่ 7: Google AI Studio & Gemini API Integration
 
 **วิชา** การพัฒนาซอฟต์แวร์สำหรับอุปกรณ์เคลื่อนที่ | **เครื่องมือ** Flutter, http package, image_picker, Google AI Studio, Gemini API
 
@@ -503,20 +503,17 @@ flutter run
 
 > ✅ **Checkpoint 1.1** ถ่ายภาพหน้าจอ Google AI Studio ที่แสดงรูปภาพที่แนบ Prompt ที่ใช้ และผลลัพธ์ JSON ที่ได้ จากนั้นทดลองรันซ้ำอีก 2 ครั้งด้วยภาพและ Prompt เดิม
 
-<img width="1317" height="617" alt="Screenshot 2026-10-02 105603" src="https://github.com/user-attachments/assets/84279b90-dbe2-498e-b903-045d8fb00074" />
-
-<img width="1317" height="362" alt="Screenshot 2026-10-02 105614" src="https://github.com/user-attachments/assets/c8cee61a-6e16-434f-84e6-6909aa9f040b" />
-
-
-
 ผลลัพธ์
 ```text
-{
-"title": "หนังสือ เก่ง Grammar มือสองสภาพดี",
-"category": "หนังสือเรียน",
-"description": "หนังสือการ์ตูนความรู้ไวยากรณ์ภาษาอังกฤษ สภาพดี สีสันสดใสทุกหน้า มีรอยยับที่มุมปกเล็กน้อยจากการใช้งาน เหมาะสำหรับนำไปทบทวนความรู้เพิ่มคะแนนสอบ"
-}
+{ "title": "หนังสือ เก่ง Grammar มือสอง สภาพดี", "category": "หนังสือเรียน",
+"description": "หนังสือการ์ตูนความรู้เก่ง Grammar สภาพดีพร้อมอ่าน สีสันสดใส
+ช่วยให้เรียนรู้ไวยากรณ์ภาษาอังกฤษได้สนุกและเข้าใจง่ายขึ้น" }
+
 ```
+<img width="1562" height="672" alt="image" src="https://github.com/user-attachments/assets/e687ddf0-6412-430c-b1ee-341420a40790" />
+
+<img width="1252" height="258" alt="image" src="https://github.com/user-attachments/assets/a1615dda-89da-463e-9df9-d318908bc351" />
+
 
 ### ขั้นตอนที่ 1.2: ทดลองเปิดใช้ Structured Output ใน AI Studio
 
@@ -525,8 +522,22 @@ flutter run
 > ✅ **Checkpoint 1.2** ถ่ายภาพหน้าจอที่แสดงการตั้งค่า Structured Output และผลลัพธ์ที่ได้ อธิบายว่าผลลัพธ์ที่ได้ต่างจากตอนไม่เปิด Structured Output ในขั้นตอน 1.1 อย่างไร (อ้างอิงบทหนังสือเรียนหัวข้อ 7.4)
 
 ```text
-บันทึกผลลัพธ์ที่นี่
+{
+  "response": "{\"title\": \"หนังสือ เก่ง Grammar มือสอง สภาพดี\", \"category\": \"หนังสือเรียน\", \"description\": \"หนังสือการ์ตูนความรู้ เก่ง Grammar มือสอง สภาพดี สีสันสวยงามทุกหน้า ช่วยให้เรียนรู้ไวยากรณ์ภาษาอังกฤษได้แบบสนุกสนานและเข้าใจง่าย\"}"
+}
 ```
+
+<img width="1566" height="767" alt="image" src="https://github.com/user-attachments/assets/40afe986-f92a-4288-9941-2119ea7b1c13" />
+
+```text
+ตอนไม่เปิด Structured Output
+เป็นการขอร้องผ่าน Prompt ให้ตอบเป็น JSON ผลลัพธ์ออกมาเป็นข้อความธรรมดาเหมือนการแชทคุยปกติ
+ตอนเปิด Structured Output
+เป็นการบังคับ AI จากระบบหลังบ้าน ห้ามพูดข้อความอื่นเด็ดขาด ต้องตอบมาเป็นฟอร์แมต JSON ตามโครงสร้างเท่านั้น ผลลัพธ์ถูกจัดรูปแบบให้อยู่ในบล็อก <> JSON
+มีการทำ Syntax Highlighting และมีปุ่มสำหรับคัดลอก (Copy) หรือดาวน์โหลดไฟล์ JSON ได้ทันที
+
+```
+
 
 ---
 
