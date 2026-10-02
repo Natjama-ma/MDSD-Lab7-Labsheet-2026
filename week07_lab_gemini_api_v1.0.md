@@ -1,4 +1,4 @@
-<img width="1546" height="756" alt="image" src="https://github.com/user-attachments/assets/94d878fa-316c-4806-9480-8572ef3631df" /># ใบงานปฏิบัติสัปดาห์ที่ 7: Google AI Studio & Gemini API Integration
+# ใบงานปฏิบัติสัปดาห์ที่ 7: Google AI Studio & Gemini API Integration
 
 **วิชา** การพัฒนาซอฟต์แวร์สำหรับอุปกรณ์เคลื่อนที่ | **เครื่องมือ** Flutter, http package, image_picker, Google AI Studio, Gemini API
 
