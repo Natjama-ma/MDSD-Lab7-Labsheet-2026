@@ -464,6 +464,15 @@ flutter run
 ```text
 บันทึกรูปผลลัพธ์ที่นี่
 ```
+หน้า Home
+<img width="1285" height="812" alt="Screenshot 2026-10-02 092528" src="https://github.com/user-attachments/assets/3c791253-aa8d-4e70-9838-dea25cb37a8a" />
+
+
+กดไอคอนตะกร้าแล้วไปหน้า Checkout ได้
+
+<img width="1281" height="712" alt="Screenshot 2026-10-02 092756" src="https://github.com/user-attachments/assets/11329566-b5d5-410c-b2c3-96512a30332c" />
+
+
 
 > ⚠️ ถ้าหน้าจอ Home แสดง Error เช่น "ไม่สามารถโหลดรายการสินค้าได้ (สถานะ 523)" ไม่ใช่ปัญหาจากไฟล์ที่คัดลอกมา แต่เป็น Fake Store API (fakestoreapi.com) ล่มชั่วคราว (Error ของ Cloudflare ที่แปลว่าเซิร์ฟเวอร์ต้นทางเข้าไม่ถึง) ให้รอแล้วลองใหม่ หรือแจ้งอาจารย์/TA เพื่อขอไฟล์ `ItemRepositoryMock` สำรองไว้ทดสอบโดยไม่ง้อเครือข่าย
 
@@ -494,8 +503,19 @@ flutter run
 
 > ✅ **Checkpoint 1.1** ถ่ายภาพหน้าจอ Google AI Studio ที่แสดงรูปภาพที่แนบ Prompt ที่ใช้ และผลลัพธ์ JSON ที่ได้ จากนั้นทดลองรันซ้ำอีก 2 ครั้งด้วยภาพและ Prompt เดิม
 
+<img width="1317" height="617" alt="Screenshot 2026-10-02 105603" src="https://github.com/user-attachments/assets/84279b90-dbe2-498e-b903-045d8fb00074" />
+
+<img width="1317" height="362" alt="Screenshot 2026-10-02 105614" src="https://github.com/user-attachments/assets/c8cee61a-6e16-434f-84e6-6909aa9f040b" />
+
+
+
+ผลลัพธ์
 ```text
-บันทึกรูปผลลัพธ์ที่นี่
+{
+"title": "หนังสือ เก่ง Grammar มือสองสภาพดี",
+"category": "หนังสือเรียน",
+"description": "หนังสือการ์ตูนความรู้ไวยากรณ์ภาษาอังกฤษ สภาพดี สีสันสดใสทุกหน้า มีรอยยับที่มุมปกเล็กน้อยจากการใช้งาน เหมาะสำหรับนำไปทบทวนความรู้เพิ่มคะแนนสอบ"
+}
 ```
 
 ### ขั้นตอนที่ 1.2: ทดลองเปิดใช้ Structured Output ใน AI Studio
